@@ -3,7 +3,7 @@ import { useCalendarStore, useUiStore } from "../../hooks"
 
 export const FabAddNew = () => {
 
-  const { setActiveEvent } = useCalendarStore();
+  const { setActiveEvent, startEmptyEvent } = useCalendarStore();
   const { openDateModal } = useUiStore();
 
   const handleClickNew = () => {
@@ -18,6 +18,7 @@ export const FabAddNew = () => {
         name: 'Alejandro'
       }
    })
+   startEmptyEvent();
     openDateModal()
   }
 
