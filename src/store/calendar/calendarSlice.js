@@ -2,14 +2,14 @@ import { createSlice } from "@reduxjs/toolkit"
 import { addHours, parseISO } from "date-fns";
 
 const tempEvent = {
-   _id: new Date().getTime(),
+   id: new Date().getTime(),
    title: 'Title test312312',
    notes: 'Notes test',
    start: new Date(),
    end: addHours(new Date(), 1),
    bgColor: '#fafafa',
    user: {
-     _id: '123',
+     id: '123',
      name: 'Alejandro'
    }
 };

@@ -73,6 +73,7 @@ export const useAuthStore = () => {
     return {
         status,
         errorMessage,
+        user,
         
         startLogin,
         startRegister,
